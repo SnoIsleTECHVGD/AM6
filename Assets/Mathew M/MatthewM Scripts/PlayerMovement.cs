@@ -33,10 +33,12 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(left))
         {
+            GetComponent<Animator>().SetInteger("Anim", 1);
             GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, GetComponent<Rigidbody2D>().velocity.y);
         }
         if (Input.GetKey(right))
         {
+            GetComponent<Animator>().SetInteger("Anim", 2);
             GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
         }
         if (Input.GetKeyDown(jump))
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (TouchingGrass())
             {
+                GetComponent<Animator>().SetInteger("Anim", 5);
                 rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
             }
         }
@@ -62,10 +65,12 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = 0f;
             if (Input.GetKey(left))
             {
+                GetComponent<Animator>().SetInteger("Anim", 3);
                 rb.velocity = new Vector2(transform.localScale.x * dashingPower * -1, 0f);
             }
             else
             {
+                GetComponent<Animator>().SetInteger("Anim", 4);
                 rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
             }
             yield return new WaitForSeconds(dashingTime);
