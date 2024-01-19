@@ -33,6 +33,7 @@ public class End : MonoBehaviour
     {
         if (Key.GetComponent<Key>().hasKey)
         {
+            player.GetComponent<Pause_Button>().enabled = false;
             player.GetComponent<PlayerMovement>().enabled = false;
             Destroy(gone);
             if (direction == 0)
