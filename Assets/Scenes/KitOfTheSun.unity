@@ -16544,6 +16544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1143230385}
   PauseScreen: {fileID: 1662970509}
+  key: {fileID: 2077518933}
 --- !u!1 &1197862241
 GameObject:
   m_ObjectHideFlags: 0
@@ -19133,7 +19134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1662970510
 RectTransform:
   m_ObjectHideFlags: 0
