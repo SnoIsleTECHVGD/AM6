@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        if (GetComponent<Rigidbody2D>().velocity.x == 0)
+        {
+            GetComponent<Animator>().SetInteger("Anim", 0);
+        }
         if (isDashing)
         {
             return;
