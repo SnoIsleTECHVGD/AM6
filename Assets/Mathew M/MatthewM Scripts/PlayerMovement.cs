@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    #region
     public KeyCode left;
     public KeyCode right;
     public KeyCode jump;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private bool TouchingGrass;
     public LayerMask GroundGaming;
     public BoxCollider2D coll;
+    #endregion
 
     void Start()
     {
