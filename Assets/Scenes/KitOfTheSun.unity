@@ -16544,7 +16544,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1143230385}
   PauseScreen: {fileID: 1662970509}
-  key: {fileID: 0}
+  key: {fileID: 2077518933}
+  ima: {fileID: 197984200}
 --- !u!1 &1197862241
 GameObject:
   m_ObjectHideFlags: 0
