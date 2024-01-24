@@ -22,7 +22,10 @@ public class Pause_Button : MonoBehaviour
                 PauseScreen.SetActive(false);
                 Cursor.visible = false;
                 key.SetActive(true);
-                ima.SetActive(true);
+                if (key.GetComponent<Key>().hasKey) 
+                {
+                    ima.SetActive(true);
+                }
             }
             else
             {
